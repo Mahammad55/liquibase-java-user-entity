@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024-02-12-01-01
+      author: mahammad
+      changes:
+        - createTable:
+            tableName: users
+            remarks: table to store information about users
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  remarks: name of user
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: varchar(50)
+                  remarks: username of user
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: int
+                  remarks: age of user
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValue: now()
+                  constraints:
+                    nullable: false
+                  remarks: when the data created
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValue: now()
+                  constraints:
+                    nullable: false
+                  remarks: last update of data
