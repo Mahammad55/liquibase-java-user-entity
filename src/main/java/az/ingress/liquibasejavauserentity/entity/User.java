@@ -29,6 +29,8 @@ public class User {
 
     private Integer age;
 
+    private String fin;
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 
