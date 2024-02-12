@@ -3,8 +3,14 @@ spring:
     url: jdbc:postgresql://localhost:5432/user-db
     username: mahammad
     password: password
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults=false:
