@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024-02-12-05-01
+      author: mahammad
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Joey"
+              - column:
+                  name: surname
+                  value: 'Thomas'
+              - column:
+                  name: age
+                  value: 35
+              - column:
+                  name: pin
+                  value: '7WRMYE0'
+
+
+  - changeSet:
+      id: 2024-02-12-05-02
+      author: mahammad
+      changes:
+        - sql: insert into users(name,surname,age,pin) values ('Alice', 'Smith', 25, '5a4swe4');
