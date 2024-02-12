@@ -29,7 +29,7 @@ public class User {
 
     private Integer age;
 
-    private String fin;
+    private String pin;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
