@@ -9,3 +9,14 @@ databaseChangeLog:
               - column:
                   name: fin
                   type: varchar(7)
+
+  - changeSet:
+      id: 2024-02-12-02-02
+      author: mahammad
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: test
+                  type: varchar(7)
