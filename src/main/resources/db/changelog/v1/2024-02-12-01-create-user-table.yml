@@ -9,40 +9,40 @@ databaseChangeLog:
             columns:
               - column:
                   name: id
-                  type: bigint
+                  type: BIGINT
                   autoIncrement: true
                   constraints:
                     primaryKey: true
                     nullable: false
               - column:
                   name: name
-                  type: varchar(50)
+                  type: VARCHAR
                   remarks: name of user
                   constraints:
                     nullable: false
               - column:
                   name: surname
-                  type: varchar(50)
+                  type: VARCHAR
                   remarks: username of user
                   constraints:
                     nullable: false
               - column:
                   name: age
-                  type: int
+                  type: INT
                   remarks: age of user
                   constraints:
                     nullable: false
               - column:
                   name: created_at
-                  type: timestamp
-                  defaultValue: now()
+                  type: TIMESTAMP
+                  defaultValue: NOW()
                   constraints:
                     nullable: false
                   remarks: when the data created
               - column:
                   name: updated_at
-                  type: timestamp
-                  defaultValue: now()
+                  type: TIMESTAMP
+                  defaultValue: NOW()
                   constraints:
                     nullable: false
                   remarks: last update of data

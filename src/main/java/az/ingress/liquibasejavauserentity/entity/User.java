@@ -31,6 +31,9 @@ public class User {
 
     private String pin;
 
+    @OneToOne(mappedBy = "user")
+    private Address address;
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 

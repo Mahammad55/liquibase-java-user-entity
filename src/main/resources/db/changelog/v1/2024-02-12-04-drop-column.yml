@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: 2024-02-12-04-02
+      id: 2024-02-12-04-01
       author: mahammad
       changes:
         - dropColumn:
@@ -8,4 +8,4 @@ databaseChangeLog:
             columns:
               - column:
                   name: test
-                  type: varchar(7)
+                  type: VARCHAR

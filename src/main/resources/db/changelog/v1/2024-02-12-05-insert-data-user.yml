@@ -24,4 +24,4 @@ databaseChangeLog:
       id: 2024-02-12-05-02
       author: mahammad
       changes:
-        - sql: insert into users(name,surname,age,pin) values ('Alice', 'Smith', 25, '5a4swe4');
+        - sql: INSERT INTO users(name,surname,age,pin) VALUES('Alice', 'Smith', 25, '5a4swe4');

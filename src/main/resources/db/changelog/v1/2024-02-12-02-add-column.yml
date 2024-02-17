@@ -8,7 +8,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: fin
-                  type: varchar(7)
+                  type: VARCHAR
 
   - changeSet:
       id: 2024-02-12-02-02
@@ -19,4 +19,4 @@ databaseChangeLog:
             columns:
               - column:
                   name: test
-                  type: varchar(7)
+                  type: VARCHAR
