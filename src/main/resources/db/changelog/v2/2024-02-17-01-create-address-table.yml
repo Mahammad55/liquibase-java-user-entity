@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024-02-17-01-01
+      author: mahammad
+      changes:
+        - createTable:
+            tableName: addresses
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  remarks: table to store about addresses
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                  autoIncrement: true
+              - column:
+                  name: street
+                  type: VARCHAR
+              - column:
+                  name: city
+                  type: VARCHAR
+              - column:
+                  name: postal_code
+                  type: VARCHAR
+              - column:
+                  name: user_id
+                  type: BIGINT
