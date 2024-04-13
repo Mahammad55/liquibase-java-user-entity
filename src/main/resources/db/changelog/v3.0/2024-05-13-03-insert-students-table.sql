@@ -1,0 +1,1 @@
+INSERT INTO students(name, surname, address, student_age) VALUES ('Joey','Barbara','Paris','56');
