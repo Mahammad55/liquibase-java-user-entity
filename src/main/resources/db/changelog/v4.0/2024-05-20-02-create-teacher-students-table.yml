@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024-05-20-02-01
+      author: mahammad
+      changes:
+        - createTable:
+            tableName: teacher_students
+            columns:
+              - column:
+                  name: teacher_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_teacher_id
+                    references: teachers(id)
+              - column:
+                  name: student_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_student_id
+                    references: students(id)
