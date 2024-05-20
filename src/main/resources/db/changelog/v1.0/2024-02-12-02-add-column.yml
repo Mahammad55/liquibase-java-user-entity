@@ -20,3 +20,20 @@ databaseChangeLog:
               - column:
                   name: test
                   type: VARCHAR
+
+  - changeSet:
+      id: 2024-05-20-02-03
+      author: mahammad
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: dob
+                  type: DATE
+              - column:
+                  name: status
+                  type: INTEGER
+              - column:
+                  name: amount
+                  type: REAL

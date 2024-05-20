@@ -9,3 +9,15 @@ databaseChangeLog:
               - column:
                   name: test
                   type: VARCHAR
+
+  - changeSet:
+      id: 2024-05-20-04-02
+      author: mahammad
+      changes:
+        - dropColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: status
+              - column:
+                  name: amount

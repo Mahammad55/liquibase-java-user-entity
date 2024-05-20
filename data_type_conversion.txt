@@ -1,0 +1,19 @@
+    JAVA        SQL
+1.  byte        TINYINT
+2.  short       SMALLINT
+3.  int         INTEGER
+4.  long        BIGINT
+5.  float       REAL
+6.  double      FLOAT,DOUBLE
+7,  boolean     BIT
+8.  char
+9.  String      CHAR,VARCHAR,LONGVARCHAR,NCHAR,NVARCHAR,LONGNVARCHAR,TEXT
+10. BigDecimal  NUMERIC,DECIMAL,MONEY,SMALLMONEY
+11. byte[]      BINARY,VARBINARY,LONG VARBINARY,IMAGE
+12. date        DATE
+13. time        TIME
+14. timestamp   TIMESTAMP
+15  Array        ARRAY
+16. Clob         CLOB
+17. Blob         BLOB
+18. Object       JAVA_OBJECT
