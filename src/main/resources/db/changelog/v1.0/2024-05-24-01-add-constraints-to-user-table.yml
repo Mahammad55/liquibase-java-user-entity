@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024-05-24-01-01
+      author: mahammad
+      changes:
+        - addUniqueConstraint:
+            tableName: users
+            columnNames: name
+            constraintName: unique_name_constraint
+
+        - addUniqueConstraint:
+            tableName: users
+            columnNames: pin
+            constraintName: unique_pin_constraint
+
+        - addUniqueConstraint:
+            tableName: users
+            columnNames: age,surname
+            constraintName: unique_age_surname_constraint
