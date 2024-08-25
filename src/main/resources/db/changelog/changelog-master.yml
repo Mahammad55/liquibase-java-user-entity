@@ -7,3 +7,5 @@ databaseChangeLog:
       path: db/changelog/v3.0
   - includeAll:
       path: db/changelog/v4.0
+  - include:
+      file: db/changelog/v5.0/2024-06-30-01-test.yml
